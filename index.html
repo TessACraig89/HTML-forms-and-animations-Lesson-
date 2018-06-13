@@ -28,6 +28,23 @@
       	<input type="file">
         <input type="submit">
     </form>
-
+  <!-- required message example -->
+    <form>
+      <label for="colorField">What is your favorite color?</label>
+      <input id="colorField" name="favColor" required>
+      <button>Submit</button>
+    </form>
+    <!-- pattern matching example -->
+    <form>
+      <label for="kindOfBob">Do you go by bob or bobert?</label>
+      <input id="kindOfBob" name="bobType" pattern="bob|bobert" required>
+      <button>Submit</button>
+    </form>
+    <!-- length requirment example -->
+    <form>
+      <label for="userName">What's your username?</label>
+      <input id="userName" name="userName" minlength="6" required>
+      <button>Submit</button>
+    </form>
   </body>
 </html>
